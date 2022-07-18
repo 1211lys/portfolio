@@ -1,6 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
+
 /* tag */
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -16,7 +21,7 @@ a {
 
 li {
     list-style: none;
-}
+} 
 
 h1 {
     font-size: 48px;
@@ -46,22 +51,23 @@ p {
     height: 41.5px;
 }
 
-.navbar_menu {
+.navbar_container {
     display: flex;
     margin: 0;
 }
 
-.navbar_menu_slot {
+.navbar_button {
     padding: 10px 10px;
     margin: 0 30px;
     color: white;
     cursor: pointer;
 }
 
-.navbar_menu_slot:hover {
+.navbar_button:hover {
     background-color: darkgray;
     border-radius: 4px;
 }
+
 /* home */
 #home {
     background: url(./img/main.background.jpg);
@@ -84,7 +90,6 @@ p {
 /* skills */
 #skills {
     font-size: 20px;
-    padding-top: 0;
 }
 
 .skill {
@@ -115,12 +120,12 @@ p {
     text-align: center;
 }
 
+.contact_logo:hover {
+    color: gray;
+}
+
 .contact_logo {
     padding: 0 10px;
     font-size: 80px;
     cursor: pointer;
-}
-
-.contact_email {
-    text-align: center;
 }
