@@ -35,20 +35,17 @@ p {
     font-size: 24px;
 }
 
-#about, #skills, #contact {
-    margin: auto;
-    max-width: 1500px;
-    padding: 50px 50px;
-}
 /* navbar */
 #navbar {
     background-color: #8f8f8e;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
     z-index: 1;
-    height: 41.5px;
+    height: 42px;
 }
 
 .navbar_container {
@@ -68,30 +65,29 @@ p {
     border-radius: 4px;
 }
 
+#about, #skills, #contact {
+    margin: auto;
+    max-width: 1500px;
+    padding: 50px 50px;
+}
+
 /* home */
 #home {
-    background: url(./img/main.background.jpg);
+    background-image: url(./img/main.background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
     width: 100%;
-    height: 900px;
-    margin: 0;
-  }
-
-.home_title {
+    height: 1000px;
+    margin-top: 42px;
     padding-top: 600px;
-    margin: 0;
 }
+
 
 /* about */
 
 /* skills */
-#skills {
-    font-size: 20px;
-}
-
 .skill {
     display: flex;
     justify-content: space-between;
@@ -100,7 +96,6 @@ p {
 }
 
 .skill_bar {
-    width: 100%;
     height: 10px;
     margin-top: 5px;
     border-radius: 5px;
@@ -117,7 +112,6 @@ p {
 .contact_logo_container {
     display: flex;
     justify-content: space-around;
-    text-align: center;
 }
 
 .contact_logo:hover {
@@ -125,6 +119,7 @@ p {
 }
 
 .contact_logo {
+    text-align: center;
     padding: 0 10px;
     font-size: 80px;
     cursor: pointer;
