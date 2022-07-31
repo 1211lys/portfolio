@@ -1,24 +1,18 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
-let isAddedClass = false;
+let booleanClass = false;
 
 document.addEventListener('scroll', () => {
-  if (!isAddedClass && window.scrollY > navbarHeight) {
+  if (!booleanClass && window.scrollY > navbarHeight) {
     navbar.classList.add('nav_scroll');
-    isAddedClass = true;
-  } 
+    booleanClass = true;
+    console.log('true');
+  }
   
-  if (isAddedClass && window.scrollY <= 0) {
+  if (booleanClass && window.scrollY <= 0) {
     navbar.classList.remove('nav_scroll');
-    isAddedClass = false;
+    booleanClass = false;
+    console.log('false');
   }
 });
-
-// const navbar = document.querySelector('#navbar');
-// const navbarHeight = navbar.getBoundingClientRect().height;
-// document.addEventListener('scroll', () => {
-//   if (window.scrollY > navbarHeight) {
-//     navbar.classList.toggle('nav_scroll')
-//     }
-// });
