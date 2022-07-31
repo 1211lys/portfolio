@@ -37,16 +37,19 @@ p {
 
 /* navbar */
 #navbar {
+    display: none;
+}
+
+#navbar.nav_scroll {
     background-color: #8f8f8e;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    display: flex;
     justify-content: flex-end;
     z-index: 1;
-    height: 42px;
-}
+  }
 
 .navbar_container {
     display: flex;
@@ -80,7 +83,6 @@ p {
     text-align: center;
     width: 100%;
     height: 1000px;
-    margin-top: 42px;
     padding-top: 600px;
 }
 
@@ -123,4 +125,16 @@ p {
     padding: 0 10px;
     font-size: 80px;
     cursor: pointer;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    background-color: darkgray;
+}
+
+.footer_text {
+    margin: 0;
+    padding: 10px 10px;
+    color: aliceblue;
 }
