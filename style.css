@@ -86,6 +86,30 @@ p {
     padding-top: 600px;
 }
 
+/* move */
+
+
+.moveTop {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 50px;
+}
+
+.moveBottom {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 50px;
+}
+
+.moveTop:hover, .moveBottom:hover {
+    color: gray;
+}
 
 /* about */
 
