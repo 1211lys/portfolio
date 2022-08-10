@@ -68,22 +68,20 @@ p {
     border-radius: 4px;
 }
 
-.moveTop {
+.moveTop, .moveBottom {
     position: fixed;
-    bottom: 6rem;
     right: 1rem;
     width: 4rem;
     height: 4rem;
     font-size: 50px;
 }
 
+.moveTop {
+    bottom: 5rem;
+}
+
 .moveBottom {
-    position: fixed;
     bottom: 1rem;
-    right: 1rem;
-    width: 4rem;
-    height: 4rem;
-    font-size: 50px;
 }
 
 .moveTop:hover, .moveBottom:hover {
