@@ -7,7 +7,6 @@ document.addEventListener('scroll', () => {
   if (!booleanClass && window.scrollY > navbarHeight) {
     navbar.classList.add('nav_scroll');
     booleanClass = true;
-    console.log('true');
   }
   
   if (booleanClass && window.scrollY <= 0) {
